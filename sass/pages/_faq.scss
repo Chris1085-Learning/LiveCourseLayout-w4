@@ -1,0 +1,37 @@
+.faq-banner {
+  width: 100%;
+  background-image: url(../../images/72.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 304px;
+
+  .bannerImg {
+    margin-left: 10px;
+  }
+
+  .title {
+    line-height: 80px;
+  }
+
+  @include pad {
+    background-image: url(../../images/72_pad.png);
+
+    .bannerImg {
+      margin-left: 16px;
+    }
+  }
+
+  @include mobile {
+    background-image: url(../../images/72_phone.png);
+    height: 143px;
+
+    .bannerImg {
+      margin-left: 8px;
+    }
+
+    .title {
+      font-size: 28px;
+    }
+  }
+}
