@@ -1,0 +1,175 @@
+.footer {
+  background-color: #aa0601;
+  padding-top: 36px;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: white;
+}
+
+.footerMenu {
+  margin-bottom: 18px;
+}
+
+.footerMenu-list {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+
+  .footerMenu-list-item {
+    margin-right: 48px;
+
+    @include pad {
+      line-height: 24px;
+      margin-right: 40px;
+    }
+  }
+  @include pad {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.footer-Content {
+  position: relative;
+}
+
+.footer-Content::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: -16px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.footer-contactList {
+  .footer-contactImg {
+    width: 36px;
+    height: 36px;
+
+    @include pad {
+      width: 23px;
+      height: 23px;
+    }
+    @include mobile {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+  .listText {
+    font-size: 36px;
+    line-height: 54px;
+    padding-left: 23px;
+    font-weight: normal;
+
+    @include pad {
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 12px;
+    }
+    @include mobile {
+      font-size: 16px;
+      line-height: 30px;
+      padding-left: 8px;
+    }
+  }
+}
+
+.social-icons {
+  margin-left: 32px;
+  .social-iconsImg {
+    width: 48px;
+    height: 48px;
+
+    @include pad {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include mobile {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.provision {
+  padding-top: 48px;
+  padding-bottom: 28px;
+  position: relative;
+
+  .provision-logo {
+    position: absolute;
+    top: 40px;
+  }
+
+  .copyright {
+    padding-left: 116px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  .provision-list {
+    .provision-list-item {
+      padding-left: 62px;
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: normal;
+    }
+  }
+
+  @include pad {
+    padding-top: 52px;
+    padding-bottom: 40px;
+
+    .provision-logo {
+      display: none;
+    }
+
+    .copyright {
+      padding-left: 0px;
+    }
+
+    .provision-list {
+      .provision-list-item {
+        padding-left: 24px;
+      }
+    }
+  }
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 16px;
+    flex-direction: column;
+
+    .provision-logo {
+      top: 90px;
+      right: 0px;
+      width: 46px;
+    }
+
+    .copyright {
+      padding-left: 0px;
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 8px;
+    }
+
+    .provision-list {
+      flex-direction: column;
+
+      .provision-list-item {
+        padding-left: 0px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

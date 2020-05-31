@@ -1,0 +1,678 @@
+// .test {
+//   border: 1px solid green;
+// }
+
+/*=====================================
+=            首頁封面 block            =
+=======================================*/
+
+.home-banner {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  text-align: right;
+
+  .banner-title {
+    color: $text-dark-red;
+
+    @include pc {
+      padding: 350px 0px;
+    }
+
+    @include pad {
+      padding: 373px 0px;
+    }
+
+    @include mobile {
+      padding: 163px 0px;
+    }
+  }
+}
+.proInfo {
+  background-color: #aa06010d;
+
+  .title {
+    color: $text-dark-red;
+  }
+
+  .proInfo-list {
+    .proInfo-list-item {
+      padding: 16px 37px 24px 37px;
+
+      .item-title {
+        color: $text-dark-red;
+      }
+    }
+  }
+
+  @include pc {
+    padding-top: 64px;
+    padding-bottom: 80px;
+
+    .title {
+      margin-bottom: 44px;
+    }
+
+    .item-img {
+      height: 100px;
+      width: 100px;
+      margin: 16px 91px 40px 91px;
+    }
+
+    .item-title {
+      margin-bottom: 4px;
+    }
+  }
+
+  @include pad {
+    padding-top: 40px;
+    padding-bottom: 36px;
+
+    .proInfo-list-item {
+      // margin: 12px;
+      .item-img {
+        height: 100px;
+        width: 100px;
+        margin: 20px 122px 16px 122px;
+      }
+
+      .item-title {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  @include mobile {
+    padding-top: 32px;
+    padding-bottom: 48px;
+
+    .title {
+      margin-bottom: 32px;
+    }
+
+    .item-img {
+      height: 100px;
+      width: 100px;
+      margin: 20px 136px 16px 136px;
+    }
+
+    .item-title {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+/*=====================================
+=            經典系列鏡框 block         =
+=======================================*/
+
+.classical {
+  .list-item:nth-child(2) .list-img:hover {
+    content: url("../images/product-2-color.png");
+  }
+
+  .list-title-container {
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    .list-title {
+      padding-left: 8px;
+    }
+  }
+
+  @include pc {
+    padding-top: 64px;
+    padding-bottom: 48px;
+
+    .title {
+      margin-bottom: 60px;
+    }
+
+    .list-item {
+      margin-bottom: 32px;
+
+      .list-title-container {
+        padding-left: 24px;
+
+        .list-title {
+          padding-left: 8px;
+        }
+      }
+    }
+
+    .list-item:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+  }
+  @include pad {
+    padding-top: 40px;
+    padding-bottom: 32px;
+
+    .container {
+      width: 100%;
+      padding-left: 48px;
+    }
+
+    .title {
+      margin-bottom: 32px;
+    }
+
+    .list-item {
+      margin-bottom: 8px;
+
+      .list-title-container {
+        justify-content: center;
+
+        .list-title {
+          padding-left: 8px;
+          font-size: 28px;
+          line-height: 42px;
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    padding-top: 24px;
+    padding-bottom: 16px;
+
+    .title {
+      margin-bottom: 16px;
+    }
+
+    .list-item {
+      margin-bottom: 8px;
+      position: relative;
+      // border: 1px solid red;
+
+      .list-title-container {
+        position: absolute;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .list-title {
+          color: white;
+          padding-left: 8px;
+          font-size: 28px;
+          line-height: 42px;
+        }
+      }
+    }
+
+    .list-item:nth-child(1) .list-title-img {
+      content: url("../images/icon-diamond-white.svg");
+    }
+
+    .list-item:nth-child(2) .list-title-img {
+      content: url("../images/icon-sun-white.svg");
+    }
+
+    .list-item:nth-child(3) .list-title-img {
+      content: url("../images/icon-thunder-white.svg");
+    }
+  }
+}
+
+/*=====================================
+=            聯名設計鏡框 block         =
+=======================================*/
+.design {
+  padding-top: 64px;
+  padding-bottom: 460px;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .title {
+    margin-bottom: 60px;
+    color: white;
+    @include pad {
+      margin-bottom: 32px;
+    }
+    @include mobile {
+      margin-bottom: 16px;
+    }
+  }
+
+  @include pad {
+    padding-bottom: 417px;
+  }
+  @include mobile {
+    padding-bottom: 189px;
+  }
+}
+
+.designGroup {
+  max-width: 100%;
+  height: 100%;
+  width: 1540px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  /* 拼圖最左邊 */
+  .designGroup-l {
+    width: 37.1%;
+    margin-right: 8px;
+  }
+
+  /* 拼圖右邊下方大區塊 */
+  .designGroup-b {
+    margin-top: 8px;
+  }
+
+  /* 拼圖右邊下方左邊小區塊 */
+  .designGroup-bl {
+    width: 13.7%;
+    margin-right: 8px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  /* 拼圖右邊下方右邊more區塊 */
+  .designGroup-brb {
+    margin-top: 8px;
+    height: 43%;
+    position: relative;
+
+    .moreInfo {
+      position: absolute;
+
+      width: 34.6%;
+      height: 100%;
+      transform: translateX(165%);
+      background-color: rgb(249, 202, 0);
+    }
+    .moreInfo-title {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-30%, -50%);
+      font-size: 72px;
+      line-height: 108px;
+      background-color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        margin-right: 17px;
+      }
+
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  @include pad {
+    width: 672px;
+    .designGroup-brb {
+      height: 40%;
+      position: relative;
+
+      .moreInfo {
+        position: absolute;
+
+        width: 34.6%;
+        height: 100%;
+        transform: translateX(165%);
+        background-color: rgb(249, 202, 0);
+      }
+      .moreInfo-title {
+        position: absolute;
+        width: 112%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        font-size: 30px;
+        line-height: 30px;
+        transform: translate(-30%, -50%);
+        background-color: #fff;
+        // padding-right: 19px;
+        text-decoration: none;
+        vertical-align: middle;
+
+        a {
+          margin-right: 10px;
+        }
+        img {
+          width: 20%;
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    width: 90%;
+    margin-bottom: 20px;
+
+    .designGroup-brb {
+      height: 35%;
+      position: relative;
+
+      .moreInfo {
+        position: absolute;
+
+        width: 45%;
+        height: 100%;
+        transform: translateX(0%);
+        background-color: rgb(249, 202, 0);
+      }
+      .moreInfo-title {
+        position: absolute;
+        width: 112%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+        line-height: 26px;
+        transform: translate(-40%, -50%);
+        background-color: #fff;
+        a {
+          margin-right: 8px;
+        }
+        img {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+/*=====================================
+=   Double A+ and YOUTH block         =
+=======================================*/
+.brand {
+  max-width: 100%;
+
+  .brandProduct {
+    max-width: 48.75%;
+
+    position: relative;
+    height: auto;
+    margin-bottom: 20px;
+
+    .brandProduct-img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .brandProduct::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+  }
+
+  .brandProduct::before {
+    position: absolute;
+    content: "";
+    color: $text-light-red;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .brandProduct:nth-child(1)::before {
+    content: "Double A+";
+  }
+
+  .brandProduct:nth-child(2)::before {
+    content: "YOUTH";
+  }
+
+  @include pc {
+    .brandProduct::before {
+      line-height: 108px;
+      font-size: 72px;
+    }
+  }
+
+  @include pad {
+    .brandProduct::before {
+      line-height: 25px;
+      font-size: 32px;
+    }
+  }
+
+  @include mobile {
+    width: 90%;
+
+    .brandProduct {
+      max-width: 100%;
+      &::before {
+        line-height: 25px;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+/*=====================================
+=               顧客推薦 block         =
+=======================================*/
+.customer {
+  margin-top: -340px;
+
+  @include pad {
+    margin-top: -380px;
+  }
+  @include mobile {
+    margin-top: -168px;
+  }
+
+  .container {
+    margin-bottom: 16px;
+
+    .title {
+      color: white;
+      margin-bottom: 60px;
+    }
+
+    .listCard {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .listCard-content {
+        border: 1px solid #dee2e6;
+        padding: 16px;
+        background-color: #fff;
+
+        .listCard-name {
+          font-weight: bold;
+          line-height: 21px;
+        }
+
+        .listCard-name,
+        .listCard-text {
+          margin-bottom: 16px;
+        }
+
+        .listCard-updateTime {
+          color: #707070;
+          line-height: 21px;
+        }
+      }
+    }
+
+    @include pad {
+      .title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 32px;
+      }
+
+      .listCard {
+        margin-bottom: 24px;
+      }
+    }
+
+    @include mobile {
+      width: 90%;
+      .title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 16px;
+      }
+      .listCard {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+/*=====================================
+=               聯絡我們 block         =
+=======================================*/
+.contact {
+  background-color: #aa06010d;
+  .title {
+    padding-top: 64px;
+    padding-bottom: 24px;
+
+    @include pad {
+      padding-top: 40px;
+      padding-bottom: 16px;
+    }
+
+    @include mobile {
+      padding-top: 24px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .container {
+    width: 41.25%;
+    @include pad {
+      width: 64.58%;
+    }
+
+    @include mobile {
+      width: 87.2%;
+    }
+  }
+
+  .contact-info {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    @include pad {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+/*=====================================
+=           聯絡我們-表單 block         =
+=======================================*/
+.form {
+  .form-group {
+    margin-bottom: 16px;
+    @include pad {
+      margin-bottom: 12px;
+    }
+
+    @include mobile {
+      margin-bottom: 12px;
+    }
+
+    .form-group-title {
+      margin-bottom: 4px;
+      @include pad {
+        margin-bottom: 2px;
+      }
+
+      @include mobile {
+        margin-bottom: 2px;
+      }
+    }
+
+    .form-group-singleContent {
+      height: 50px;
+      padding-left: 16px;
+      border: 1px solid black;
+
+      @include mobile {
+        height: 36px;
+        padding-left: 12px;
+      }
+    }
+
+    .form-group-multiContent {
+      padding-left: 16px;
+      padding-top: 14px;
+      border: 1px solid black;
+      resize: none;
+
+      @include mobile {
+        padding-left: 12px;
+        padding-top: 7px;
+      }
+    }
+
+    .form-check-content {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    input[type="checkbox"] {
+      outline: 1px solid black;
+      border: 1px solid black;
+    }
+  }
+
+  .form-btn {
+    padding-top: 26px;
+    padding-bottom: 92px;
+  }
+}
+
+.btn {
+  width: 180px;
+  height: 54px;
+  background-color: #aa0601;
+  color: white;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+
+  &:hover {
+    background-color: #690400;
+  }
+
+  @include pad {
+    width: 136px;
+    height: 36px;
+  }
+
+  @include mobile {
+    width: 136px;
+    height: 36px;
+  }
+}

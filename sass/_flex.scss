@@ -1,0 +1,36 @@
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  // overflow-x: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.jusitify-content-center {
+  justify-content: center;
+}
+
+.jusitify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
