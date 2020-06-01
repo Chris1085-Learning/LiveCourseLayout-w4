@@ -1,3 +1,7 @@
+/*=========================
+=    FAQ Banner block     =
+===========================*/
+
 .faq-banner {
   width: 100%;
   background-image: url(../../images/72.png);
@@ -8,6 +12,8 @@
 
   .bannerImg {
     margin-left: 10px;
+    width: 58px;
+    height: 58px;
   }
 
   .title {
@@ -19,6 +25,12 @@
 
     .bannerImg {
       margin-left: 16px;
+      width: 48px;
+      height: 48px;
+    }
+
+    .title {
+      line-height: 80px;
     }
   }
 
@@ -28,10 +40,104 @@
 
     .bannerImg {
       margin-left: 8px;
+      width: 24px;
+      height: 24px;
     }
 
     .title {
       font-size: 28px;
+      line-height: 40px;
     }
   }
+}
+
+.faq-content {
+  padding-top: 88px;
+  padding-bottom: 156px;
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 63px;
+  }
+
+  @include pad {
+    padding-top: 40px;
+    padding-bottom: 104px;
+
+    .title {
+      font-size: 28px;
+      margin-bottom: 32px;
+    }
+  }
+
+  @include mobile {
+    padding-top: 24px;
+    padding-bottom: 56px;
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.faq-list {
+  .faq-list-item {
+    padding: 22px 38px;
+    border: 1px solid black;
+    margin-bottom: -1px;
+
+    @include pad {
+      padding: 16px 24px;
+    }
+
+    @include mobile {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 16px;
+      padding-right: 8px;
+    }
+  }
+}
+
+/*=============================
+=    FAQ QA content block     =
+===============================*/
+.question {
+  font-size: 20px;
+  line-height: 23px;
+  @include pad {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.answer {
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #f2f2f2;
+  font-weight: normal;
+  @include pad {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
 }

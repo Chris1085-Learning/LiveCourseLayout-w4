@@ -94,7 +94,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   width: 100%;
   height: 100%;
@@ -946,6 +946,10 @@ p {
   padding-left: 8px;
 }
 
+.classical .list-img {
+  max-height: 310px;
+}
+
 @media (min-width: 1200px) {
   .classical {
     padding-top: 64px;
@@ -953,6 +957,9 @@ p {
   }
   .classical .title {
     margin-bottom: 60px;
+  }
+  .classical .list-img {
+    max-height: 310px;
   }
   .classical .list-item {
     margin-bottom: 32px;
@@ -983,6 +990,9 @@ p {
   .classical .title {
     margin-bottom: 32px;
   }
+  .classical .list-img {
+    max-height: 168px;
+  }
   .classical .list-item {
     margin-bottom: 8px;
   }
@@ -1005,6 +1015,9 @@ p {
   }
   .classical .title {
     margin-bottom: 16px;
+  }
+  .classical .list-img {
+    max-height: 134px;
   }
   .classical .list-item {
     margin-bottom: 8px;
@@ -1118,8 +1131,8 @@ p {
   position: absolute;
   width: 34.6%;
   height: 100%;
-  -webkit-transform: translateX(165%);
-          transform: translateX(165%);
+  -webkit-transform: translateX(170%);
+          transform: translateX(170%);
   background-color: #f9ca00;
 }
 
@@ -1551,6 +1564,9 @@ p {
   }
 }
 
+/*=========================
+=    FAQ Banner block     =
+===========================*/
 .faq-banner {
   width: 100%;
   background-image: url(../../images/72.png);
@@ -1562,6 +1578,8 @@ p {
 
 .faq-banner .bannerImg {
   margin-left: 10px;
+  width: 58px;
+  height: 58px;
 }
 
 .faq-banner .title {
@@ -1574,6 +1592,11 @@ p {
   }
   .faq-banner .bannerImg {
     margin-left: 16px;
+    width: 48px;
+    height: 48px;
+  }
+  .faq-banner .title {
+    line-height: 80px;
   }
 }
 
@@ -1584,9 +1607,117 @@ p {
   }
   .faq-banner .bannerImg {
     margin-left: 8px;
+    width: 24px;
+    height: 24px;
   }
   .faq-banner .title {
     font-size: 28px;
+    line-height: 40px;
   }
+}
+
+.faq-content {
+  padding-top: 88px;
+  padding-bottom: 156px;
+}
+
+.faq-content .title {
+  font-size: 32px;
+  margin-bottom: 16px;
+  line-height: 63px;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .faq-content {
+    padding-top: 40px;
+    padding-bottom: 104px;
+  }
+  .faq-content .title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .faq-content {
+    padding-top: 24px;
+    padding-bottom: 56px;
+  }
+  .faq-content .title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+.faq-list .faq-list-item {
+  padding: 22px 38px;
+  border: 1px solid black;
+  margin-bottom: -1px;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .faq-list .faq-list-item {
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .faq-list .faq-list-item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 8px;
+  }
+}
+
+/*=============================
+=    FAQ QA content block     =
+===============================*/
+.question {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .question {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .question {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.answer {
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #f2f2f2;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .answer {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .answer {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
