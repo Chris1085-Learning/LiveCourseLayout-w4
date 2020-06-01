@@ -1588,7 +1588,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .faq-banner {
-    background-image: url(../../images/72_pad.png);
+    background-image: url(../images/72_pad.png);
   }
   .faq-banner .bannerImg {
     margin-left: 16px;
@@ -1602,7 +1602,7 @@ p {
 
 @media (max-width: 767.98px) {
   .faq-banner {
-    background-image: url(../../images/72_phone.png);
+    background-image: url(../images/72_phone.png);
     height: 143px;
   }
   .faq-banner .bannerImg {

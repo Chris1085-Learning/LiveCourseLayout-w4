@@ -21,7 +21,7 @@
   }
 
   @include pad {
-    background-image: url(../../images/72_pad.png);
+    background-image: url(../images/72_pad.png);
 
     .bannerImg {
       margin-left: 16px;
@@ -35,7 +35,7 @@
   }
 
   @include mobile {
-    background-image: url(../../images/72_phone.png);
+    background-image: url(../images/72_phone.png);
     height: 143px;
 
     .bannerImg {
